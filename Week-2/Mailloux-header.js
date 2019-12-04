@@ -13,9 +13,9 @@
 * Response: output 
 * Description: Returns a well-formatted string header
 */
-exports.display = function (Laurie, Mailloux, week 2) {
-	let output = '\n' + firstName + ' ' + lastName + '\n' + assignment + '\nDate: ' + 
-	new Date().toLocaleDateString('en-US')
+exports.display = function (firstName, lastName, assignment) {
+	let output = '\n' + firstName + ' ' + lastName + '\n' + assignment + '\nDate: ' +
+	  new Date().toLocaleDateString()
 
-	return output  
+	return output
 }
