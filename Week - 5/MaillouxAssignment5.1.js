@@ -42,7 +42,7 @@ var dogs = [
   },
   {
     dogName: "Zoey",
-    age: 6
+    age 6
   },
   {
     dogName: "Tebow",

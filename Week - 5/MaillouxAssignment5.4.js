@@ -3,7 +3,7 @@
 ; Title: Object Collections 
 ; Author: Laurie Mailloux  
 ; Date:   January 7, 2020
-; Description: 5 Composers 
+; Description: 5 Composers sort by rating and gene 
 ;===========================================
 */
 

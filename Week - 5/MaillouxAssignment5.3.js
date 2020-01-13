@@ -75,7 +75,10 @@ var composers = [
     rating: 5
   }
 ];
+//output
+
 //call function
+console.log("-- COMPOSERS --");
 composers.forEach(function(composer) {
   console.log(
     "Last Name: " +
