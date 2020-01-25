@@ -1,0 +1,49 @@
+<!--
+============================================
+; Title:  Mailloux Assignment 7.4.html
+; Author: Laurie Mailloux
+; Date:   24 January 2020
+; Modified By: 
+; Description: Inline JavaScript Functions
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 7.4</title>
+
+  <link rel="stylesheet" href="mailloux.css">
+</head>
+
+<body>
+  <!--creat a table with 5 computer components, use Inline JavaScript alert for components id whe edit or delete are selected-->
+
+  <div id="components list"></div>
+
+  <script>
+    document.getElementById('components list').innerHTML = "<h1>Computer Components</h1>" +
+      "<table>" +
+      "<thead>" +
+      "<tr>" +
+      "<th>Id</th>" +
+      "<th>Name</th>" +
+      "<th>Amount</th>" +
+      "<th>Functions</th>" +
+      "</tr>" +
+      "</thead>" +
+      "<tbody>" +
+      "<tr><td>1</td><td>Laptop</td><td>1,500.99</td><td><a href='javascript:alert(`1`);'>EDIT</a> | <a href='javascript:confirm(`Are you sure?`);'>DELETE</a</td></tr>" +
+      "<tr><td>2</td><td>Motherboard</td><td>35.70</td><td><a href='javascript:alert(`1`);'>EDIT</a> | <a href='javascript:confirm(`Are you sure?`);'>DELETE</a</tr>" +
+      "<tr><td>3</td><td>Monitor</td><td>174.99</td><td><a href='javascript:alert(`1`);'>EDIT</a> | <a href='javascript:confirm(`Are you sure?`);'>DELETE</a</tr>" +
+      "<tr><td>4</td><td>Mouse</td><td>13.99</td><td><a href='javascript:alert(`1`);'>EDIT</a> | <a href='javascript:confirm(`Are you sure?`);'>DELETE</a</tr>" +
+      "<tr><td>5</td><td>keyboard</td><td>14.50</td><td><a href='javascript:alert(`1`);'>EDIT</a> | <a href='javascript:confirm(`Are you sure?`);'>DELETE</a</tr>"
+
+  </script>
+
+
+
+</body>
+
+</html>

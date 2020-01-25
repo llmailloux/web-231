@@ -1,0 +1,62 @@
+<!--
+============================================
+; Title:  Mailloux Assignment 7.3.html
+; Author: Laurie Mailloux
+; Date:   24 January 2020
+; Modified By: 
+; Description: Client-Side JavaScript
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 7.3</title>
+
+  <link rel="stylesheet" href="mailloux.css">
+</head>
+
+<body>
+
+  <!--Create ordered shopping list-->
+
+  <script>
+    document.write(`
+    <h1>SHOPPING LIST v.1</h1>
+    <ol>
+      <li>Oranges</li>
+      <li>Apples</li>
+      <li>Pears</li>
+      <li>Limes</li>
+      <li>Lemons</li>
+    </ol>`);
+
+  </script>
+
+  <!-- create shopping list using HTML table and innerHtML function-->
+
+  <div id="list"></div>
+
+  <script>
+    document.getElementById('list').innerHTML = "<h2>SHOPPING LIST V.2</h2>" +
+      "<table>" +
+      "<thead>" +
+      "<tr>" +
+      "<th>Id</th>" +
+      "<th>Item</th>" +
+      "</tr>" +
+      "</thead>" +
+      "<tbody>" +
+      "<tr><td>1</td><td>Oranges</td></tr>" +
+      "<tr><td>2</td><td>Apples</td></tr>" +
+      "<tr><td>3</td><td>Pears</td></tr>" +
+      "<tr><td>4</td><td>Limes</td></tr>" +
+      "<tr><td>5</td><td>Lemons</td></tr>"
+
+  </script>
+
+
+
+</body>
+
+</html>

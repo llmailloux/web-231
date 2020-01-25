@@ -1,0 +1,9 @@
+table, th, td {
+  border: 1px #D3D3D3;
+}
+th {
+  background-color: cornflowerblue;
+  color: white;
+}
+tr:nth-child(even) {background-color: #B5D3E7;}
+h2 {font-size: 32px};
