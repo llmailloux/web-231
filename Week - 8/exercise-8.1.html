@@ -1,3 +1,12 @@
+ <!--
+============================================
+; Title: Assignment 8.1
+; Author: Laurie Mailloux
+; Date: 01/30/2020
+; Modified By:
+; Description: Discussion Board: Find the 2 errors in the code below
+;===========================================
+--> 
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,6 +15,8 @@
 	<title>Exercise 8.1</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
 	<style type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   
 		body {
 		      font-family: 'Roboto', sans-serif;
 		    }
@@ -28,11 +39,12 @@
 		          text-align: center;
 		      }
 	</style>
+	
 </head>
 
 <body>
 	<div id="dogs"></div>
-	<table border="2">
+	table border="2">
 		<tr>
 			<td>Rotweiler
 				<button onclick="Rotweiler() ">Click Me!</button>
@@ -63,7 +75,7 @@
 		    ]
 		   var out = "<h1>Types of Dogs</h1><ul>";
 		for (var x = 0; x < dogs.length; x++) {
-		    out += "<li>" + dogs[].id + ":" + dogs[x].name + "</li>";
+		    out += "<li>" + dogs[x].id + ":" + dogs[x].name + "</li>";
 		}
 		   out += "</ul>";
 		document.getElementById("dogs").innerHTML = out; 
@@ -71,7 +83,7 @@
 		function Rotweiler (){
 		    alert("Yes");
 		}
-		function Beagle { 
+		function Beagle({ 
 		    alert ("No");
 		}
 		function Pomeranian (){
