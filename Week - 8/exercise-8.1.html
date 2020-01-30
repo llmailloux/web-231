@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Exercise 8.1</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+	<style type="text/css">
+		body {
+		      font-family: 'Roboto', sans-serif;
+		    }
+		    Dogs {
+		      max-width: 300px;
+		      margin: 0 auto;
+		    }
+		    h1 {
+		      border-bottom: 4px green;
+		        border-bottom-style: dotted;
+		    text-align: center;
+		        border-width: 5px;
+		    }
+		      ul {list-style: none;
+		          text-align: center;
+		          padding-top: 20px;
+		    }
+		      table {
+		          border: 10px solid blue;
+		          text-align: center;
+		      }
+	</style>
+</head>
+
+<body>
+	<div id="dogs"></div>
+	<table border="2">
+		<tr>
+			<td>Rotweiler
+				<button onclick="Rotweiler() ">Click Me!</button>
+			</td>
+			<td>Beagle
+				<button onclick="Beagle() ">Click Me!</button>
+			</td>
+		</tr>
+		<tr>
+			<td>Pomeranian
+				<button onclick="Pomeranian() ">Click Me!</button>
+			</td>
+			<td>Bulldog
+				<button onclick="Bulldog() ">Click Me!</button>
+			</td>
+		</tr>
+	</table>
+	<p id="Beagle"></p>
+	<p id="Rotweiler"></p>
+	<p id="Pomeranian"></p>
+	<p id="Bulldog"></p>
+	<script>
+		var dogs = [
+		        {id: 1, name: " Beagle"},
+		        {id: 2, name: " Rotweiler"},
+		        {id: 3, name: " Pomeranian"},
+		        {id: 4, name: " Bulldog"},
+		    ]
+		   var out = "<h1>Types of Dogs</h1><ul>";
+		for (var x = 0; x < dogs.length; x++) {
+		    out += "<li>" + dogs[].id + ":" + dogs[x].name + "</li>";
+		}
+		   out += "</ul>";
+		document.getElementById("dogs").innerHTML = out; 
+		 
+		function Rotweiler (){
+		    alert("Yes");
+		}
+		function Beagle { 
+		    alert ("No");
+		}
+		function Pomeranian (){
+		    alert("No");
+		}
+		function Bulldog (){
+		   alert("No");
+		}
+	</script>
+</body>
+
+</html>
