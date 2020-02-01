@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <!--
+
+ ===========================================
+
+; Title: Assignment 8.3
+
+; Author: Zach Dahir
+
+; Date: 01-30-2020
+
+; Description:Jquery discussion with 2 errors
+
+===========================================
+
+-->
+
+  <meta charset="UTF-8">
+
+  <title>Exercise 8.4</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+ 
+
+<body>
+
+<button id="toggle">Click me</button>
+
+<h1>Hide this sentence</h1>
+
+ 
+
+<br><br>
+
+ 
+
+<button id="fade">Click me</button>
+
+<h2>Fade out</h2>
+
+ 
+
+<script>
+
+$("#toggle").click(function(){
+
+  $("h1").slideToggle("slow");
+
+})
+
+ 
+
+$("#fade").click(function(){
+
+  $("h2").fadeToggle();
+
+})
+
+ 
+
+</script>
+
+</body>
+
+</html>
