@@ -1,0 +1,73 @@
+<!--
+============================================
+; Title: Assignment 8.4
+; Author: Laurie Mailloux
+; Date: 01/30/2020
+; Modified By:
+; Description: - putting it all together
+;===========================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Assignment 8.4</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- root directory css file -->
+	<link rel="stylesheet" type="text/css" href="../site.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div id="emps"></div>
+	<script type="text/javascript">
+		//declare var
+		var employees, out;
+		
+		//create function 
+		function myEmployee(id, firstName, lastName, title){
+		  this.id = id,
+		  this.firstName = firstName,
+		  this.lastName = lastName,
+		  this.title = title
+		}
+		
+		//create an array
+		employees = [   
+		  new myEmployee('1001', 'Bob', 'Tincher', 'Janitor'),
+		  new myEmployee('1002', 'Mary', 'Van', 'Receptionist'),
+		  new myEmployee('1003', 'Peggy', 'Calico', 'Coordinator'),
+		  new myEmployee('1004', 'Olaf', 'Widget', 'Cashier'),
+		  new myEmployee('1005', 'Sylvester', 'Blue', 'Security')
+		  ] 
+		            
+		  //loop          
+		 function getEmployees(id){
+		employees.forEach(function(employee){
+		  if(id === employee.id){
+		     alert(employee.id + ' ' + employee.firstName + ' ' + employee.lastName + ' ' + employee.title);
+		        }
+		});
+		}      
+		  //string table output
+		    var output = "<table><tr><th>Id </th><th>First name </th><th>Last name </th><th>Title </th></tr>";
+		    for (var e = 0; e < employees.length; e++) {
+		      output += "<tr><td class=table tr>" + employees[e].id + "</td><td>" + employees[e].firstName + "</td><td>" +
+		        employees[e].lastName + "</td><td>" + employees[e].title + "</td></tr>";
+		    }
+		    document.getElementById('emps').innerHTML = output;
+		    
+		   //on click event
+		    $(function () {
+		      $("table tr").click(function () {
+		      let selectEmp = $(this).find('td:first').html();
+		        getEmployees(selectEmp);
+		      })
+		    });         
+		            
+		//end program
+	</script>
+</body>
+
+</html>

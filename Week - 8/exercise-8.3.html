@@ -1,0 +1,104 @@
+ <!--
+============================================
+; Title: Assignment 8.3
+; Author: Laurie Mailloux
+; Date: 01/30/2020
+; Modified By:
+; Description: - jQuery
+;===========================================
+--> 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Exercise 8.3</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="/path/to/your/root/css/file">
+	<style>
+		table {
+		            padding-left: 20px;
+		        }
+		    table, th, td {
+		  border: 1px solid black;
+		  border-collapse: collapse;
+		     
+		}
+		th, td {
+		  padding: 5px;
+		  text-align: left;
+		       padding-left: 20px;
+		}
+		tr:nth-child(even) {background-color:aquamarine;
+		        } 
+		        .topnav{
+		            background-color: blueviolet;
+		            padding-bottom: 20px;
+		        }
+    </style>
+</head>
+
+<body>
+	<div class="topnav"> <a class="active" href="#home">Home</a>
+	</div>
+	<h1>Exercise 8.3 - jQuery</h1>
+	<div id="myParagraph">
+		<p>Maecenas vehicula nisl ac nibh posuere, quis maximus massa malesuada. Nam eu massa facilisis mi vestibulum luctus. Sed vel mauris velit. Mauris aliquet arcu quis urna interdum, id hendrerit eros suscipit. Duis maximus, orci non imperdiet varius, est ligula cursus urna, at consectetur eros dui sollicitudin orci. Nulla facilisi. Vestibulum bibendum luctus dui vel porta. Nulla porttitor sit amet est gravida faucibus. Quisque vel tellus et sapien iaculis tincidunt ac a elit. Suspendisse potenti. Vestibulum cursus nisl ipsum, vitae feugiat justo suscipit a. Fusce lobortis dapibus sapien, eget ultrices nunc consectetur a. Proin suscipit varius tincidunt. Cras eu nisl at augue suscipit pharetra quis nec arcu. Proin in nulla ullamcorper, aliquam lacus vel, placerat velit. Aliquam eget arcu leo.</p>
+		<button onclick="myFunction()">Toggle</button>
+	</div>
+	</br>
+
+	<table id="Fruits" border="1" style="border-collapse: collapse;" cellpadding="8">
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Type</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>101</td>
+				<td>Banana</td>
+			</tr>
+			<tr>
+				<td>102</td>
+				<td>Apple</td>
+			</tr>
+			<td>103</td>
+			<td>Orange</td>
+			</tr>
+			<tr>
+				<td>104</td>
+				<td>Grapefruit</td>
+			</tr>
+			<tr>
+				<td>105</td>
+				<td>Grape</td>
+			</tr>
+		</tbody>
+	</table>
+	<script type="text/javascript">
+        //onclick
+		$(document).ready(function(){
+		  $("button").click(function(){
+		    $("p").toggle();
+		  });
+		});
+		//call table results    
+		  var tbl = document.getElementById("Fruits");
+		        if (tbl != null) {
+		            for (var i = 0; i < tbl.rows.length; i++) {
+		                for (var j = 0; j < tbl.rows[i].cells.length; j++)
+		                    tbl.rows[i].cells[j].onclick = function () { getval(this); };
+		            }
+		        }
+		        function getval(cel) {
+		            alert(cel.innerHTML);
+		        }
+        
+        //end program
+	</script>
+</body>
+
+</html>

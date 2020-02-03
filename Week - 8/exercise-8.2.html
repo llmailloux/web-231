@@ -1,0 +1,60 @@
+<!--
+============================================
+; Title: Assignment 8.2
+; Author: Laurie Mailloux
+; Date: 01/30/2020
+; Modified By:
+; Description: - Dynamic HTML
+;===========================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 8.2</title>
+  
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+
+  <style type="text/css">
+      
+     body {
+      font-family: 'Roboto', sans-serif;
+    }
+    fruits {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+    h1 {
+      border-bottom: 3px solid green;
+    }
+      ul {list-style: none;
+          text-align: center;
+          padding-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="fruits"></div>
+
+<script>
+    //assign var
+    var fruits = [
+        {id: 1, name: " Grapefruit"},
+        {id: 2, name: " Apple"},
+        {id: 3, name: " Banana"},
+        {id: 4, name: " Cherry"},
+        {id: 5, name: " Lemon"},
+    ]
+    //output
+    var out = "<h1>Fruits</h1><ul>";
+for (var x = 0; x < fruits.length; x++) {
+    out += "<li>" + fruits[x].id + ":" + fruits[x].name + "</li>";
+}
+   out += "</ul>";
+
+document.getElementById("fruits").innerHTML = out;  
+</script>
+
+</body>
+</html>
